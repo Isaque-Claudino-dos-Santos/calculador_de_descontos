@@ -10,8 +10,8 @@ const kListen = Symbol("listen");
 export default class Server implements InterfaceServer {
   [kApp] = express();
 
-  readonly HOST: string = env.APP_HOST ?? "localhost";
-  readonly PORT: number = Number(env.APP_PORT);
+  readonly HOST: string = "localhost";
+  readonly PORT: number = 8050;
 
   [kUseStatics]() {
     const app = this[kApp];
