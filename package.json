@@ -6,7 +6,7 @@
   "scripts": {
     "dev": "npx tsx watch ./src/index.ts",
     "test": "npx jest",
-    "build": "rm -rf dist && npx tsc"
+    "build": "rm -rf dist && npx tsc && cp -r ./public ./dist"
   },
   "repository": {
     "type": "git",
