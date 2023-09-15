@@ -5,5 +5,5 @@ import Server from "./Server";
 const server = new Server().boot();
 
 server.app().get("/", (req, res) => {
-  res.sendFile(path.resolve("public", "index.html"));
+  res.sendFile(path.resolve("src", "public", "index.html"));
 });

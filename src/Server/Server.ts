@@ -15,7 +15,7 @@ export default class Server implements InterfaceServer {
 
   [kUseStatics]() {
     const app = this[kApp];
-    app.use(express.static(path.resolve("public")));
+    app.use(express.static(path.resolve("src", "public")));
   }
 
   [kListen]() {
