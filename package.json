@@ -1,0 +1,33 @@
+{
+  "name": "workspace",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "npx tsx watch ./src/index.ts",
+    "test": "npx jest",
+    "build": "rm -rf dist && npx tsc"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Isaque-Claudino-dos-Santos/calculador_de_descontos.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Isaque-Claudino-dos-Santos/calculador_de_descontos/issues"
+  },
+  "homepage": "https://github.com/Isaque-Claudino-dos-Santos/calculador_de_descontos#readme",
+  "devDependencies": {
+    "@types/express": "^4.17.17",
+    "@types/jest": "^29.5.4",
+    "jest": "^29.7.0",
+    "ts-jest": "^29.1.1",
+    "tsx": "^3.12.10"
+  },
+  "dependencies": {
+    "dotenv": "^16.3.1",
+    "express": "^4.18.2"
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "compilerOptions": {
+    "rootDir": "./src",
+    "allowJs": true,
+    "moduleResolution": "Node",
+    "esModuleInterop": true,
+    "outDir": "./dist",
+    "strict": true
+  },
+  "files": ["./src/index.ts"],
+  "include": ["./src/**/*.ts"],
+  "exclude": ["node_modules"]
+}
