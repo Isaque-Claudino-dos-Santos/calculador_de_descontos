@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <link rel="stylesheet" href="./css/reset.css" />
+    <link rel="stylesheet" href="./css/utils.css" />
+    <title>Calculadora de Descontos</title>
+  </head>
+
+  <body>
+    <header>
+      <div>
+        <h1 class="center">Calculadora de Descontos</h1>
+      </div>
+    </header>
+
+    <main class="flex">
+      <form class="flex flex-column justify-around w-2/4 p-1">
+        <fieldset class="flex flex-column p-1">
+          <h3 class="center">Tipo de Desconto</h3>
+
+          <div class="flex justify-between mt-1">
+            <label for="bloodTest">🩸 Exame de Sangue</label>
+            <input type="radio" name="descontType" id="bloodTest" />
+          </div>
+
+          <div class="flex justify-between mt-1">
+            <label for="accredited">🏥 Credenciada</label>
+            <input type="radio" name="descontType" id="accredited" />
+          </div>
+
+          <div class="flex justify-between mt-1">
+            <label for="imageTest">🩻 Exame de Imagem</label>
+            <input type="radio" name="descontType" id="imageTest" />
+          </div>
+
+          <div class="flex justify-between mt-1">
+            <label for="pix">❖ Pix</label>
+            <input type="radio" name="descontType" id="pix" />
+          </div>
+        </fieldset>
+
+        <fieldset class="flex flex-column">
+          <label for="testPrice" class="m-1">Preço do Procedimento/Teste</label>
+          <input
+            type="text"
+            id="testPrice"
+            class="bg-black font-white b-rounded p-2 font-medium"
+            autocomplete="off"
+          />
+        </fieldset>
+      </form>
+
+      <div>
+        <div id="descontResponse"></div>
+      </div>
+    </main>
+
+    <script src="./js/Finance/HandleDesconts.js"></script>
+    <script src="./js/Finance/Descont.js"></script>
+    <script src="./js/index.js"></script>
+  </body>
+</html>
