@@ -1,13 +1,10 @@
 {
   "compilerOptions": {
-    "rootDir": "./src",
-    "allowJs": true,
-    "moduleResolution": "Node",
-    "esModuleInterop": true,
-    "outDir": "./dist",
-    "strict": true
+    "allowSyntheticDefaultImports": true,
+    "noImplicitAny": true,
+    "module": "es6",
+    "target": "es5",
+    "allowJs": true
   },
-  "files": ["./src/index.ts"],
-  "include": ["./src/**/*.ts"],
-  "exclude": ["node_modules"]
+  "files": ["src/index.ts"]
 }
