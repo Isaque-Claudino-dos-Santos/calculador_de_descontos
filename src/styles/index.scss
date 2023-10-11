@@ -1,13 +1,12 @@
-@import "https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap";
+@import 'https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap';
 
-
-$orange-color: #FF5722;
-$blue-pri-color: #222831; 
-$blue-sec-color: #2D4059;
+$orange-color: #ff5722;
+$blue-pri-color: #222831;
+$blue-sec-color: #2d4059;
 $white-color: #eeeeee;
 
 body {
-    background-color: $blue-sec-color;
-    color: $white-color;
-    font-family: Roboto;
+  background-color: $blue-sec-color;
+  color: $white-color;
+  font-family: Roboto;
 }
