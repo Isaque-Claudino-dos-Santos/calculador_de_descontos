@@ -4,5 +4,6 @@
     "editor.fontLigatures": true,
     "editor.fontFamily": "Fira Code",
     "prettier.singleQuote": true,
-    "prettier.semi": false
+    "prettier.semi": false,
+    "editor.fontSize": 13
 }
