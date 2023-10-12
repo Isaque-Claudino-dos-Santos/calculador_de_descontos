@@ -23,12 +23,17 @@ export default class Input extends ElementHandler {
     this.container.appendChild(label)
   }
 
-  addField(id: string, type: string = 'text'): void {
+  addField(
+    id: string,
+    type: string = 'text',
+    callback: (element: HTMLInputElement) => void = () => {}
+  ): void {
     const input = document.createElement('input')
     input.type = type
     input.id = id
     input.className = this.inputClassName
     input.onload = (e) => e.preventDefault()
+    callback(input)
     this.container.appendChild(input)
   }
 }
