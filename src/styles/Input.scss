@@ -1,0 +1,17 @@
+.input {
+  display: flex;
+  flex-direction: column;
+}
+
+.input_label {
+  font-weight: 550;
+  padding: 1% 0;
+}
+
+.input_field {
+  background-color: $orange-color;
+  border: 2px solid $font-color;
+  color:  $font-color;
+  border-radius: 15px;
+  padding: 1%; 
+}
