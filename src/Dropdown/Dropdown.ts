@@ -5,8 +5,8 @@ export default class Dropdown extends ElementHandler {
   private readonly items = document.createElement('nav')
   private readonly containerClassName: string = 'dropdown'
   private readonly buttonClassName: string = 'dropdown_button'
-  private readonly itemsClassName: string = 'dropdown_items'
   private readonly itemsOffClassName: string = 'dropdown_items_off'
+  private readonly itemsClassName: string = `dropdown_items ${this.itemsOffClassName}`
   private readonly itemClassName: string = 'dropdown_item'
 
   constructor() {
