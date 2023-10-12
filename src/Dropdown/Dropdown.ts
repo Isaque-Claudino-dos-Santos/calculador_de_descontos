@@ -14,6 +14,10 @@ export default class Dropdown extends ElementHandler {
     this.provideClassName()
   }
 
+  private toggleDropdown() {
+    this.items.classList.toggle(this.itemsOffClassName)
+  }
+
   private provideClassName(): void {
     this.container.className = this.containerClassName
     this.items.className = this.itemsClassName
@@ -24,7 +28,7 @@ export default class Dropdown extends ElementHandler {
     button.className = this.buttonClassName
     button.textContent = text
     button.addEventListener('click', () => {
-      this.items.classList.toggle(this.itemsOffClassName)
+      this.toggleDropdown()
     })
     this.container.appendChild(button)
   }
@@ -36,7 +40,10 @@ export default class Dropdown extends ElementHandler {
     const item = document.createElement('a')
     item.className = `${this.itemClassName} ${this.itemsOffClassName}`
     item.textContent = text
-    item.onclick = (e) => onclick(e)
+    item.onclick = (e) => {
+      onclick(e)
+      this.toggleDropdown()
+    }
     this.items.appendChild(item)
     this.container.appendChild(this.items)
   }
