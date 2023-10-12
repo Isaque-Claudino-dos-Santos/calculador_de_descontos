@@ -1,7 +1,7 @@
 import './styles/index.scss'
 import Dropdown from './Dropdown'
 
-const mainElement = document.querySelector('main')
+const mainElement = document.querySelector('main .container') as HTMLElement
 
 const dropdown = new Dropdown()
 dropdown.addButton('Tipo de Desconto')
