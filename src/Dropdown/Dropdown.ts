@@ -1,5 +1,7 @@
-export default class Dropdown {
-  private readonly container = document.createElement('div')
+import ElementHandler from '../Modules/ElementHandler'
+
+export default class Dropdown extends ElementHandler {
+  public readonly container = document.createElement('div')
   private readonly items = document.createElement('nav')
   private readonly containerClassName: string = 'dropdown'
   private readonly buttonClassName: string = 'dropdown_button'
@@ -8,6 +10,7 @@ export default class Dropdown {
   private readonly itemClassName: string = 'dropdown_item'
 
   constructor() {
+    super()
     this.provideClassName()
   }
 
@@ -36,9 +39,5 @@ export default class Dropdown {
     item.onclick = (e) => onclick(e)
     this.items.appendChild(item)
     this.container.appendChild(this.items)
-  }
-
-  public appendIn(element: HTMLElement): void {
-    element.appendChild(this.container)
   }
 }
