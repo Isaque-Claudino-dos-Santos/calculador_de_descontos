@@ -8,9 +8,10 @@
     "allowJs": true,
     "lib": ["DOM"],
     "rootDir": "./src",
-    "outDir": "dist"
+    "outDir": "./dist",
+    "moduleResolution": "Node"
   },
   "files": ["./src/index.ts"],
   "exclude": ["node_modules"],
-  "include": ["./src/**/*.ts"]
+  "include": ["./src/**/*.ts", "./src/**/*.d.ts"]
 }
