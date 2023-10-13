@@ -9,7 +9,7 @@ const headerElement = document.querySelector('header .container') as HTMLElement
 const mainElement = document.querySelector('main .container') as HTMLElement
 
 const descontsData = [
-  ['Pix', 2],
+  ['Pix', 5],
   ['Credenciada', 25],
   ['Exames de Lab', 25],
   ['Exames de Imagem', 25],
