@@ -11,7 +11,7 @@ const mainElement = document.querySelector('main .container') as HTMLElement
 const descontsData = [
   ['Pix', 5],
   ['Credenciada', 25],
-  ['Exames de Lab', 25],
+  ['Exames de Lab', 50],
   ['Exames de Imagem', 25],
 ]
 const descontProvider = new DescontProvider()
