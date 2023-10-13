@@ -25,6 +25,15 @@ for (const descont of descontsData) {
 
 descontProvider.current(descontsData[0][0] as string)
 
+function filterInput(value: string): string {
+  const validPattern = new RegExp(/^([0-9]+)(,|\.)?([0-9]+)?$/)
+  const currentValue = value.slice(value.length - 1, value.length)
+
+  if (!validPattern.test(value)) return value.slice(0, value.length - 1)
+  if (currentValue === ',') return value.replace(',', '.')
+  return value
+}
+
 function handlerCalculations() {
   let value = Number(
     document.querySelector<HTMLInputElement>('#procedure').value
@@ -64,7 +73,10 @@ dropdown.appendIn(mainElement)
 const input = new Input()
 input.addLabel('Valor do procedimento', 'procedure')
 input.addField('procedure', 'text', (element) => {
-  element.oninput = (e) => handlerCalculations()
+  element.oninput = (e) => {
+    element.value = filterInput(element.value)
+    handlerCalculations()
+  }
 })
 input.appendIn(mainElement)
 
