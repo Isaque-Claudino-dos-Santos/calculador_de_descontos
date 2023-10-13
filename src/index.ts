@@ -72,7 +72,7 @@ dropdown.appendIn(mainElement)
 
 const input = new Input()
 input.addLabel('Valor do procedimento', 'procedure')
-input.addField('procedure', 'text', (element) => {
+input.addField('procedure', 'number', (element) => {
   element.oninput = (e) => {
     element.value = filterInput(element.value)
     handlerCalculations()
