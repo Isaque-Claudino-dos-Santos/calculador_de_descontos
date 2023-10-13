@@ -49,9 +49,9 @@ function handlerCalculations() {
 
   descontType.textContent = descont.name
   porcentage.textContent = `${descont.percentage * 100}%`
-  procedureValue.textContent = String(value)
-  descontToApply.textContent = String(descont.descont(value))
-  procedureWithDescont.textContent = String(descont.descontSubValue(value))
+  procedureValue.textContent = value.toFixed(2)
+  descontToApply.textContent = descont.descont(value).toFixed(2)
+  procedureWithDescont.textContent = descont.descontSubValue(value).toFixed(2)
 }
 
 const title = new Title()
